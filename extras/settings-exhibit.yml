@@ -3,3 +3,58 @@ languages:
   nl: Nederlands
   fr: Français
   en: English
+tileTypes:
+  1:
+    name: Floor
+    color: '#ffffff'
+    walkable: true
+    reward: -1
+    type: floor
+  2:
+    name: Wall
+    color: '#666666'
+    walkable: false
+    texture: 'static/icons/wall.svg'
+    editorIcon: 'static/icons/wall.svg'
+    type: wall
+  3:
+    name: Exit
+    color: '#99ff99'
+    walkable: true
+    exit: true
+    reward: 50
+    texture: 'static/icons/exit.svg'
+    editorIcon: 'static/icons/exit.svg'
+    type: exit
+    react: always
+    reaction: 'static/openmoji/trophy.svg'
+    fixed: false
+  4:
+    name: Lava
+    color: '#ff3333'
+    walkable: true
+    reward: -5
+    type: lava
+    react: always
+    reaction: 'static/openmoji/fire.svg'
+  5:
+    name: Candy
+    color: '#fff799'
+    walkable: true
+    reward: -0.2
+    item: candy
+    textureScale: 0.5
+    editorIcon: 'static/icons/candy.svg'
+    type: candy
+    react: once
+    reaction: 'static/openmoji/red-heart.svg'
+panels:
+  editor:
+    policyOverlayAlwaysVisible: false
+    policyOverlayShowArrows: true
+    policyOverlayShowText: true
+    policyOverlayShowBackground: true
+    aiResetButtonResetsMaze: true
+  training:
+    useToggleFFButton: false
+    useToggleViewPolicyButton: true
