@@ -1,0 +1,19 @@
+{
+  "text-1-1": "<p>Krijgt de robot een snoepje? Dan krijgt hij pluspunten. Rijdt hij over lava? Dan krijgt hij minpunten. De robot wil snel en met een zo goed mogelijke score de uitgang bereiken.</p>",
+  "text-1-2": "<p>Door de schuifknop te verplaatsen, kan je de robot op verschillende manieren laten bewegen.</p><ul><li>Zet je de knop bij EXPLOIT? Dan kiest de robot steeds de richting die zijn score zo hoog mogelijk zal maken, gebaseerd op wat hij daarvoor al ontdekte. Kreeg hij bijvoorbeeld ergens veel snoepjes? Dan gaat hij daar waarschijnlijk terug naartoe.</li><li>Zet je de knop bij EXPLORE? Dan kiest de robot steeds een willekeurige richting.</li><li>Zet je de knop ertussen? Dan kiest de robot voor een mix van de 2 manieren hierboven.</li></ul>",
+  "text-1-3": "<p>Probeer de verschillende manieren eens uit. Wat lijkt jou het beste? EXPLOIT? Maar als er plekken zijn die de robot nog niet ontdekte (waar veel punten te scoren zijn), zal hij die misschien nooit ontdekken. Of EXPLORE? Maar als alles verkend is, wil je wel dat de robot meer rekening begint te houden met wat hij al ontdekte. Dus misschien ergens tussenin?</p>",
+  "text-2-1": "<p>Klaar om die kennis uit te testen? Bouw dan zelf een doolhof en vul het met snoepjes en lava. Hoeveel keer moet de robot het doolhof doorlopen voor hij een goed pad heeft geleerd?</p>",
+  "text-2-2": "<p>Probeer ook eens verschillende dingen uit:</p><ul><li>Neemt de robot een langer pad in ruil voor snoep?</li><li>Wat gebeurt er als de robot door lava moet bewegen om bij de uitgang te komen?</li><li>Duurt het lang voordat de robot een nieuw pad vindt als je het oude pad dat hij leerde blokkeert?</li></ul>",
+  "ai-training-view-slider-exploration-rate-limit-min": "Uitbuiten",
+  "ai-training-view-slider-exploration-rate-limit-max": "Verkennen",
+  "ai-training-view-button-clear": "Terugzetten",
+  "editor-palette-button-tile-floor": "Vloer",
+  "editor-palette-button-tile-wall": "Muur",
+  "editor-palette-button-tile-lava": "Lava",
+  "editor-palette-button-tile-exit": "Uitgang",
+  "editor-palette-button-tile-candy": "Snoepgoed",
+  "editor-palette-button-tile-cone": "Verkeerskegel",
+  "editor-palette-button-tile-pit": "Valkuil",
+  "editor-palette-button-action-reset-map": "Terugzetten",
+  "rewards-bar-label": "Beloningen"
+}

@@ -1,0 +1,19 @@
+{
+  "text-1-1": "<p>Si le robot trouve un bonbon sur sa route, il gagne des points. À l’inverse, s’il roule dans la lave, il en perd. Ce robot a un seul objectif : sortir rapidement du labyrinthe, avec le meilleur score possible.</p>",
+  "text-1-2": "<p>Utilisez le curseur pour influencer les déplacements du robot.</p><ul><li>Sur le mode EXPLOIT, le robot privilégie la route qui lui vaudra le meilleur score, selon ce qu’il a observé jusque-là. S’il a compris qu’il peut trouver plus de bonbons dans un coin du labyrinthe, il va probablement vouloir y retourner.</li><li>En mode EXPLORE, le robot choisit une direction au hasard.</li><li>Et si vous placez le curseur au milieu, le robot combinera ces deux méthodes.</li></ul>",
+  "text-1-3": "<p>Essayez les différents modes. D’après vous, quelle est la meilleure approche ? EXPLOIT ? Mais s’il y a des endroits que le robot n’a pas encore découverts (alors qu’il pourrait y marquer beaucoup de points), il se peut qu’il ne les trouve jamais. Et EXPLORE, alors ? C’est bien de tester tous les chemins, mais c’est mieux de s’en souvenir pour la suite... Peut-être vaut-il donc mieux trouver un équilibre ?</p>",
+  "text-2-1": "<p>Alors, vous avez tout bien observé et voulez passer à l’action ? Imaginez votre propre labyrinthe et remplissez-le de bonbons et de lave. Combien de fois le robot devra-t-il explorer le labyrinthe avant de trouver la solution ?</p>",
+  "text-2-2": "<p>Voici quelques idées à tester :</p><ul><li>Le robot prendra-t-il un chemin plus long s’il sait qu’il peut y trouver des bonbons ?</li><li>Que se passe-t-il si le robot doit traverser de la lave pour atteindre la sortie ?</li><li>Combien de temps faut-il au robot pour trouver une nouvelle route si vous bloquez celle qu’il avait apprise ?</li></ul>",
+  "ai-training-view-slider-exploration-rate-limit-min": "Exploiter",
+  "ai-training-view-slider-exploration-rate-limit-max": "Explorer",
+  "ai-training-view-button-clear": "Réinitialisez",
+  "editor-palette-button-tile-floor": "Sol",
+  "editor-palette-button-tile-wall": "Mur",
+  "editor-palette-button-tile-lava": "Lave",
+  "editor-palette-button-tile-exit": "Sortie",
+  "editor-palette-button-tile-candy": "Bonbon",
+  "editor-palette-button-tile-cone": "Cône de signalisation",
+  "editor-palette-button-tile-pit": "Trou",
+  "editor-palette-button-action-reset-map": "Réinitialisez",
+  "rewards-bar-label": "Récompenses"
+}
