@@ -1,5 +1,11 @@
+@import "technopolis-font";
+
 $exhibit-width: 1080px;
 $exhibit-height: 1920px;
+
+.rl2-exhibit {
+  @include exo-regular;
+}
 
 .rl2-exhibit-portrait {
   width: $exhibit-width;

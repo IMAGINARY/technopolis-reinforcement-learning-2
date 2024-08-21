@@ -1,0 +1,16 @@
+@use "../../vendor/exo/scss/mixins" as Exo;
+
+@include Exo.faces($weights: 400, $display: auto, $directory: "/vendor/exo/files");
+@include Exo.faces($weights: 700, $display: auto, $directory: "/vendor/exo/files");
+
+@mixin exo-regular {
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin exo-bold {
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
