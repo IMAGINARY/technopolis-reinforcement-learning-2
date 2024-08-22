@@ -1,0 +1,55 @@
+@import "technopolis-colors";
+
+.lang-switcher {
+  width: 100%;
+
+  .lang-switcher-trigger {
+    display: none;
+  }
+
+  .lang-switcher-menu-mask {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    height: initial;
+    width: initial;
+    overflow: initial;
+  }
+
+  .lang-switcher-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    right: initial;
+    bottom: initial !important;
+    border: none;
+    transition: none;
+    background-color: transparent;
+    padding-right: 0.5em;
+
+    &:before {
+      content: " ";
+      // Take all the remaining space in the flex
+      flex-grow: 1;
+      background-color: $tl-green;
+      background: linear-gradient(61deg, $tl-green 0%, $tl-green 93%, transparent 93%, transparent 100%);
+      height: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    li {
+      margin: 0 0.15em;
+      
+      button {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $tl-green-bright;
+        padding: 0.4em 0.8em;
+        min-width: initial;
+        background-color: $tl-green-black-leak;
+      }
+    }
+  }
+}
