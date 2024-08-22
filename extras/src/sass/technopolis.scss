@@ -1,4 +1,7 @@
 @import "technopolis-font";
+@import "technopolis-layout";
+@import "technopolis-text";
+@import "technopolis-overrides";
 
 $exhibit-width: 1080px;
 $exhibit-height: 1920px;
@@ -12,11 +15,36 @@ $exhibit-height: 1920px;
   height: $exhibit-height;
 }
 
-.panel-lg {
-  height: 1210px;
+.rl2-exhibit {
+  #rewards-bar {
+    top: 50px;
+    left: 40px;
+  }
+
+  #rewards-ui {
+    left: 40px;
+    top: 220px;
+  }
+
+  #explore-exploit-ui {
+    position: absolute;
+    top: 250px;
+    left: 0;
+  }
+
+  #palette .exhibit-maze-editor-palette {
+    top: 280px;
+    left: 40px;
+    bottom: auto;
+  }
+
+  #training-ui {
+    bottom: auto;
+    left: 265px;
+    top: 870px;
+  }
 }
 
-.text {
-  position: relative;
-  z-index: 2000;
+.maze-editor-palette .maze-editor-palette-bar .item .label {
+  width: 7em;
 }

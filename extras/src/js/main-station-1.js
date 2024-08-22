@@ -15,12 +15,27 @@ runExhibit((config, textures) => {
   );
   $('#pixi-app-container').append(app.getView());
 
-  const exploreExploitInteractive = new ExploreExploitInteractive(config, textures);
-  app.addComponent(exploreExploitInteractive, 20.25, 820.25, 480, (480 / 8) * 2);
-  $('#explore-exploit-ui').append(exploreExploitInteractive.ui.$element);
+  const padding = 40;
+  const uiSpacing = 70;
 
+  const rewardsPanel = $('#rewards-component').parent("[class*='tl-panel-']");
   const rewardsInteractive = new RewardsInteractive(config, textures);
-  app.addComponent(rewardsInteractive, 20.25, 500.25, 480, 480 / 8);
   $('#rewards-bar').append(rewardsInteractive.$barContainer);
   $('#rewards-ui').append(rewardsInteractive.ui.$element);
+  app.addComponent(rewardsInteractive,
+    rewardsPanel.offset().left + padding + 0.25,
+    rewardsPanel.offset().top + uiSpacing + padding + 0.25,
+    720,
+    720 / 8
+  );
+
+  const exploreExploitPanel = $('#explore-exploit-component').parent("[class*='tl-panel-']");
+  const exploreExploitInteractive = new ExploreExploitInteractive(config, textures);
+  app.addComponent(exploreExploitInteractive,
+    exploreExploitPanel.offset().left + padding + 0.25,
+    exploreExploitPanel.offset().top + padding + 0.25,
+    720,
+    (720 / 8) * 2
+  );
+  $('#explore-exploit-ui').append(exploreExploitInteractive.ui.$element);
 });

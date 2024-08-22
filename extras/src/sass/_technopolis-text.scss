@@ -1,0 +1,15 @@
+.text {
+  position: relative;
+  z-index: 200;
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text-large {
+  font-size: 1.9rem;
+  font-weight: bold;
+}

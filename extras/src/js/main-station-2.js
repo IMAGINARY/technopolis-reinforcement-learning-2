@@ -15,8 +15,18 @@ runExhibit((config, textures) => {
   );
   $('#pixi-app-container').append(app.getView());
 
+  const paddingX = 285;
+  const paddingY = 40;
+  const uiSpacing = 70;
+
+  const mapEditorPanel = $('#map-editor-component').parent("[class*='tl-panel-']");
   const mapEditorInteractive = new MapEditorInteractive(config, textures);
-  app.addComponent(mapEditorInteractive, 1080 - 720 - 40 + 0.25, 200 + 0.25, 720, 720);
+  app.addComponent(mapEditorInteractive,
+    mapEditorPanel.offset().left + paddingX + 0.25,
+    mapEditorPanel.offset().top + paddingY + uiSpacing + 0.25,
+    720,
+    720
+  );
   mapEditorInteractive.setupKeyControls();
-  $('#panel-1').append(mapEditorInteractive.$element);
+  $('#palette').append(mapEditorInteractive.$element);
 });
