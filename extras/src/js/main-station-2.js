@@ -17,7 +17,7 @@ runExhibit((config, textures) => {
 
   const paddingX = 285;
   const paddingY = 40;
-  const uiSpacing = 70;
+  const uiSpacing = 100;
 
   const mapEditorPanel = $('#map-editor-component').parent("[class*='tl-panel-']");
   const mapEditorInteractive = new MapEditorInteractive(config, textures);

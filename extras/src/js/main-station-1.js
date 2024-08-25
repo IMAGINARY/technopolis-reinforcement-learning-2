@@ -16,7 +16,7 @@ runExhibit((config, textures) => {
   $('#pixi-app-container').append(app.getView());
 
   const padding = 40;
-  const uiSpacing = 70;
+  const uiSpacing = 100;
 
   const rewardsPanel = $('#rewards-component').parent("[class*='tl-panel-']");
   const rewardsInteractive = new RewardsInteractive(config, textures);
