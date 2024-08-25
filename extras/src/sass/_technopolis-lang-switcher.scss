@@ -41,6 +41,19 @@
 
     li {
       margin: 0 0.15em;
+      position: relative;
+
+      &.active {
+        &:after {
+          content: " ";
+          display: block;
+          background-color: $tl-green-bright;
+          height: 5px;
+          width: 1.2em;
+          margin: auto;
+          margin-top: -5px;
+        }
+      }
 
       button {
         font-weight: bold;
