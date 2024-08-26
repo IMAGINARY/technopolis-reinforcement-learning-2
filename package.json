@@ -12,7 +12,7 @@
     "copy-font": "cp -R ./node_modules/@fontsource/exo/ ./dist/vendor/exo",
     "watch:copy": "cpx './extras/**' './dist/' -vw",
     "watch:compile": "cd ./dist && npm run watch",
-    "build": "rm -rf ./dist && degit github:IMAGINARY/reinforcement-learning-2#v1.8.0 --force dist && npm run copy-font && cp -R ./extras/. ./dist/. && cd ./dist && npm install && npm run build && cd .."
+    "build": "rm -rf ./dist && degit github:IMAGINARY/reinforcement-learning-2#v1.9.0 --force dist && npm run copy-font && cp -R ./extras/. ./dist/. && cd ./dist && npm install && npm run build && cd .."
   },
   "repository": {
     "type": "git",
