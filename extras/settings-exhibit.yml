@@ -48,6 +48,8 @@ tileTypes:
     type: candy
     react: once
     reaction: 'static/openmoji/red-heart.svg'
+pixiOptions:
+  antialias: true
 panels:
   editor:
     policyOverlayAlwaysVisible: false
