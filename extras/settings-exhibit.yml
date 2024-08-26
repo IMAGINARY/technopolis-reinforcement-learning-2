@@ -3,6 +3,7 @@ languages:
   nl: "[ NL ]"
   fr: "[ FR ]"
   en: "[ EN ]"
+idleTimeout: 300
 tileTypes:
   1:
     name: Floor
