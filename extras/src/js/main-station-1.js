@@ -6,6 +6,7 @@ const RewardsInteractive = require('./components/interactive-rewards');
 const MapEditorInteractive = require('./components/interactive-map-editor');
 const runExhibit = require('./run-exhibit');
 require('../sass/technopolis.scss');
+const ReactionController = require('./view-html/reaction-controller');
 
 runExhibit((config, textures) => {
   const app = new PixiCompositeApp(
@@ -40,4 +41,14 @@ runExhibit((config, textures) => {
     (720 / 8) * 2
   );
   $('#explore-exploit-ui').append(exploreExploitInteractive.ui.$element);
+
+  const reactionController = new ReactionController($('body'), config);
+  exploreExploitInteractive.view.robotView.events.on('reactEnd', (animation) => {
+    const bounds = exploreExploitInteractive.view.robotView.sprite.getBounds();
+    reactionController.launchReaction(
+      animation.reaction,
+      bounds.x,
+      bounds.y - bounds.height / 2
+    );
+  });
 });
