@@ -15,3 +15,49 @@
     display: none;
   }
 }
+
+$exhibit-width: 1080px;
+$exhibit-height: 1920px;
+
+.rl2-exhibit {
+  @include exo-regular;
+}
+
+.rl2-exhibit-portrait {
+  width: $exhibit-width;
+  height: $exhibit-height;
+}
+
+.rl2-exhibit {
+  #rewards-bar {
+    top: 80px;
+    left: 80px;
+
+    .label {
+      @include ui-text;
+    }
+  }
+
+  #rewards-ui {
+    left: 80px;
+    top: 250px;
+  }
+
+  #explore-exploit-ui {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+  }
+
+  #palette .exhibit-maze-editor-palette {
+    top: 280px;
+    left: 40px;
+    bottom: auto;
+  }
+
+  #training-ui {
+    bottom: auto;
+    left: 265px;
+    top: 900px;
+  }
+}

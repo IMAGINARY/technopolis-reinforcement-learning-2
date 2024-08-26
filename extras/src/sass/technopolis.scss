@@ -3,50 +3,5 @@
 @import "technopolis-text";
 @import "technopolis-dark";
 @import "technopolis-lang-switcher";
+@import "technopolis-ui";
 @import "technopolis-overrides";
-
-$exhibit-width: 1080px;
-$exhibit-height: 1920px;
-
-.rl2-exhibit {
-  @include exo-regular;
-}
-
-.rl2-exhibit-portrait {
-  width: $exhibit-width;
-  height: $exhibit-height;
-}
-
-.rl2-exhibit {
-  #rewards-bar {
-    top: 80px;
-    left: 40px;
-  }
-
-  #rewards-ui {
-    left: 40px;
-    top: 250px;
-  }
-
-  #explore-exploit-ui {
-    position: absolute;
-    top: 250px;
-    left: 0;
-  }
-
-  #palette .exhibit-maze-editor-palette {
-    top: 280px;
-    left: 40px;
-    bottom: auto;
-  }
-
-  #training-ui {
-    bottom: auto;
-    left: 265px;
-    top: 900px;
-  }
-}
-
-.maze-editor-palette .maze-editor-palette-bar .item .label {
-  width: 7em;
-}

@@ -19,7 +19,7 @@ tileTypes:
     type: wall
   3:
     name: Exit
-    color: '#99ff99'
+    color: '#75fb5c'
     walkable: true
     exit: true
     reward: 50
@@ -39,7 +39,7 @@ tileTypes:
     reaction: 'static/openmoji/fire.svg'
   5:
     name: Candy
-    color: '#fff799'
+    color: '#fff85b'
     walkable: true
     reward: -0.2
     item: candy
@@ -58,3 +58,8 @@ panels:
   training:
     useToggleFFButton: false
     useToggleViewPolicyButton: true
+ui:
+  maze:
+    startCellStrokeSize: 10
+    startCellStrokeColor: '#75fb5c'
+    startCellFillColor: '#ffffff'

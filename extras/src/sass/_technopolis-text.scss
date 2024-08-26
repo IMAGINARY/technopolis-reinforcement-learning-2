@@ -3,7 +3,7 @@
 .text {
   position: relative;
   z-index: 200;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 
   p:last-child {
@@ -12,13 +12,13 @@
 }
 
 .text-large {
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
 .tl-box {
   background-color: $tl-gray-light;
-  background: linear-gradient(97deg, $tl-gray-light 0%, $tl-gray-light 90%, white 90%, white 93%);
+  background: linear-gradient(97deg, $tl-gray-light-darker 0%, $tl-gray-light 90%, white 90%, white 93%);
   padding: 40px;
   padding-right: 180px;
   @include exo-medium;
@@ -29,9 +29,5 @@
 
   ul:last-child {
     margin-bottom: 0;
-  }
-
-  .text {
-    font-size: 1.3rem;
   }
 }

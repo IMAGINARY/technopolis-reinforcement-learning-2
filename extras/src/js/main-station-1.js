@@ -15,7 +15,8 @@ runExhibit((config, textures) => {
   );
   $('#pixi-app-container').append(app.getView());
 
-  const padding = 40;
+  const paddingX = 80;
+  const paddingY = 40;
   const uiSpacing = 100;
 
   const rewardsPanel = $('#rewards-component').parent("[class*='tl-panel-']");
@@ -23,8 +24,8 @@ runExhibit((config, textures) => {
   $('#rewards-bar').append(rewardsInteractive.$barContainer);
   $('#rewards-ui').append(rewardsInteractive.ui.$element);
   app.addComponent(rewardsInteractive,
-    rewardsPanel.offset().left + padding + 0.25,
-    rewardsPanel.offset().top + uiSpacing + padding + 0.25,
+    rewardsPanel.offset().left + paddingX + 0.25,
+    rewardsPanel.offset().top + uiSpacing + paddingY + 0.25,
     720,
     720 / 8
   );
@@ -32,8 +33,8 @@ runExhibit((config, textures) => {
   const exploreExploitPanel = $('#explore-exploit-component').parent("[class*='tl-panel-']");
   const exploreExploitInteractive = new ExploreExploitInteractive(config, textures);
   app.addComponent(exploreExploitInteractive,
-    exploreExploitPanel.offset().left + padding + 0.25,
-    exploreExploitPanel.offset().top + padding + 0.25,
+    exploreExploitPanel.offset().left + paddingX + 0.25,
+    exploreExploitPanel.offset().top + paddingY + 0.25,
     720,
     (720 / 8) * 2
   );
