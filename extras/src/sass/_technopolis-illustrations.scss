@@ -1,0 +1,27 @@
+.illustration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+.illustration-robot {
+  background-image: url('../../static/icons/illo-robot.svg');
+  bottom: 24px;
+  left: 70px;
+}
+
+.illustration-maze {
+  background-image: url('../../static/icons/illo-maze.svg');
+  bottom: 26px;
+  left: 40px;
+}
+
+.tl-padded-illustration {
+  padding-left: 260px;
+  padding-right: 40px;
+}
