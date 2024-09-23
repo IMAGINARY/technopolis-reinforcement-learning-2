@@ -33,8 +33,8 @@
       content: " ";
       // Take all the remaining space in the flex
       flex-grow: 1;
-      background-color: $tl-green;
-      background: linear-gradient(61deg, $tl-green 0%, $tl-green 93%, transparent 93%, transparent 100%);
+      background-color: $tl-green-bright;
+      background: linear-gradient(61deg, $tl-green-bright 0%, $tl-green-bright 93%, transparent 93%, transparent 100%);
       height: 1.2rem;
       margin-top: 1rem;
     }

@@ -55,11 +55,11 @@
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  background-color: $tl-green;
+  background-color: $tl-green-bright;
 }
 
 input[type="range"]::-moz-range-thumb {
-  background-color: $tl-green;
+  background-color: $tl-green-bright;
 }
 
 .definition {
