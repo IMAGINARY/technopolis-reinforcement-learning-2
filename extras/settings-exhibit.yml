@@ -41,11 +41,11 @@ tileTypes:
     reaction: 'static/openmoji/fire.svg'
   5:
     name: Candy
-    color: '#fff85b'
+    color: '#ffffff'
     walkable: true
     reward: -0.2
-    item: candy
-    textureScale: 0.5
+    texture: 'static/icons/candy-alt.png'
+    textureVisited: 'static/icons/candy-alt-tr.png'
     editorIcon: 'static/icons/candy.svg'
     type: candy
     react: once
