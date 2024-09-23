@@ -44,6 +44,8 @@
       position: relative;
 
       &.active {
+        display: none; // Hide the active language, per request.
+
         &:after {
           content: " ";
           display: block;
@@ -60,8 +62,9 @@
         font-size: 1.5rem;
         color: $tl-green-bright;
         padding: 0.4em 0.8em;
-        min-width: initial;
         background-color: $tl-green-black-leak;
+        min-width: 100px;
+        text-align: center;
       }
     }
   }
