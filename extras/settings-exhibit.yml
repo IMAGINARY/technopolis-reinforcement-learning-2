@@ -9,6 +9,8 @@ idleTimeout: 300
 # Path to a video file to be used as screensaver. The video will be played in a loop, and has
 # to be compatible to run from a <video> HTML element.
 # screensaverVideo: 'static/screensaver/test.mp4'
+robot:
+  texture: 'static/icons/robot.svg'
 tileTypes:
   1:
     name: Floor
