@@ -3,7 +3,12 @@ languages:
   nl: "[ NL ]"
   fr: "[ FR ]"
   en: "[ EN ]"
+# Time, in seconds, after which the station will be considered "idle". If a screensaver video is
+# set below, it will start. Otherwise, the exhibit will reload, resetting its state.
 idleTimeout: 300
+# Path to a video file to be used as screensaver. The video will be played in a loop, and has
+# to be compatible to run from a <video> HTML element.
+# screensaverVideo: 'static/screensaver/test.mp4'
 tileTypes:
   1:
     name: Floor

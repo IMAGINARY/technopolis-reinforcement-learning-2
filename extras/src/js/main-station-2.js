@@ -5,8 +5,8 @@ const ExploreExploitInteractive = require('./components/interactive-explore-expl
 const RewardsInteractive = require('./components/interactive-rewards');
 const MapEditorInteractive = require('./components/interactive-map-editor');
 const runExhibit = require('./run-exhibit');
-const { installIdleHandler } = require('./helpers-html/idle');
 require('../sass/technopolis.scss');
+const initIdleBehavior = require('./helpers-html/handle-idle-behavior');
 
 runExhibit((config, textures) => {
   const app = new PixiCompositeApp(
@@ -32,9 +32,5 @@ runExhibit((config, textures) => {
   mapEditorInteractive.setupKeyControls();
   $('#palette').append(mapEditorInteractive.$element);
 
-  if (config.idleTimeout) {
-    installIdleHandler(() => {
-      window.location.reload();
-    }, config.idleTimeout);
-  }
+  initIdleBehavior(config);
 });

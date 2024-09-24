@@ -3,11 +3,10 @@
 const PixiCompositeApp = require('./view-pixi/pixi-composite-app');
 const ExploreExploitInteractive = require('./components/interactive-explore-exploit');
 const RewardsInteractive = require('./components/interactive-rewards');
-const MapEditorInteractive = require('./components/interactive-map-editor');
 const runExhibit = require('./run-exhibit');
 require('../sass/technopolis.scss');
 const ReactionController = require('./view-html/reaction-controller');
-const { installIdleHandler } = require('./helpers-html/idle');
+const initIdleBehavior = require('./helpers-html/handle-idle-behavior');
 
 runExhibit((config, textures) => {
   const app = new PixiCompositeApp(
@@ -53,9 +52,5 @@ runExhibit((config, textures) => {
     );
   });
 
-  if (config.idleTimeout) {
-    installIdleHandler(() => {
-      window.location.reload();
-    }, config.idleTimeout);
-  }
+  initIdleBehavior(config);
 });
